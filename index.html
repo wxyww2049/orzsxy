@@ -1,0 +1,43 @@
+<head>
+	<meta charset="UTF8">
+	<link rel="stylesheet" href="main.css">
+	<title>sxy的粉丝站点</title>
+	<style>
+		* {
+			color: #191970;
+			transition: all 0.3s ease;
+			text-shadow: 0 0 20px #e1ffff;
+		}
+		body {
+			background-color: #1095c3;
+			text-align: center;
+		}
+		header {
+			margin: 2cm 0;
+		}
+	</style>
+</head>
+<body>
+	
+	<header>
+		<h1>宋晓缘</h1>
+		<img height = "275px" src="./s5.jpg" >
+		<!-- <img src="ss.gif"> -->
+		<h2>北京大学数学系</br>IMO 2018 2017 金牌世界第一</br>2019高考满分状元</h2>
+		<p>She has AKed IMO <span class="counter">0</span> times.</p>
+		<p>他已经被您膜拜了 <span class="counter">0</span> 次。</p>
+		<button id="mobai" type="button" class="el-button el-button--primary is-plain is-round">点击膜拜</button>
+		<script>
+			var counter = 0;
+			document.getElementById("mobai").onclick = function() {
+				++counter;
+				document.getElementById("mobai").innerHTML="<img src='ss.gif'>";
+				for(let item of document.getElementsByClassName("counter")) {
+					item.innerText = counter;
+				}
+			}
+		</script>
+	</header>
+
+	
+</body>
