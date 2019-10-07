@@ -31,9 +31,22 @@
 		<p>她已经被您膜拜了 <span class="counter">0</span> 次。</p>
 		<button id="mobai" type="button" class="el-button el-button--primary is-plain is-round">点击膜拜</button>
 		<script>
+		var date1= new Date();
+        var date2 = '2019/10/01 08:30:00';
+        var date3 = date1.getTime() - new Date(date2).getTime();
+				var T = Math.floor(date3 / 10000000);
+				var s = "<p> 她共被膜拜" + T + "千次";
+				document.write(s);
+		</script>
+		<script>
+		
 			var counter = 0;
 			document.getElementById("mobai").onclick = function() {
 				++counter;
+				if(counter % 100 == 0) {
+                    var s = "感谢您的" + counter + "个赞，sxy又变强了！";
+                    alert(s);
+				}
 				document.getElementById("mobai").innerHTML="<img src='ss.gif'>";
 				for(let item of document.getElementsByClassName("counter")) {
 					item.innerText = counter;
