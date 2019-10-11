@@ -1,21 +1,24 @@
 <head>
-	<meta charset="UTF8">
-	<link rel="stylesheet" href="main.css">
-	<title>sxy的粉丝站点</title>
-	<style>
-		* {
-			color: #191970;
-			transition: all 0.3s ease;
-			text-shadow: 0 0 20px #e1ffff;
-		}
-		body {
-			background-color: #1095c3;
-			text-align: center;
-		}
-		header {
-			margin: 2cm 0;
-		}
-	</style>
+    <meta charset="UTF8">
+    <link rel="stylesheet" href="https://orzsxy.wxyww.top/main.css">
+    <title>sxy的粉丝站点</title>
+    <style>
+        * {
+            color: #191970;
+            transition: all 0.3s ease;
+            text-shadow: 0 0 20px #e1ffff;
+        }
+        body {
+            background-color: #1095c3;
+            text-align: center;
+        }
+        header {
+            margin: 2cm 0;
+        }
+    </style>
+  
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
   <script>
         document.onkeydown = function(){
 
@@ -36,55 +39,58 @@
     </script>
     <script>
         document.oncontextmenu = function (event){
-if(window.event){
-event = window.event;
-}try{
-var the = event.srcElement;
-if (!((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName == "TEXTAREA")){
-return false;
-}
-return true;
-}catch (e){
-return false;
-}
-}
+            if(window.event){
+            event = window.event;
+        }
+        try{
+            var the = event.srcElement;
+            if (!((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName == "TEXTAREA")){
+                return false;
+            }
+            return true;
+        }
+        catch (e){
+            return false;
+            }
+        }
     </script>
 
 
 </head>
 <body>
-	
-	<header>
-		<h1>宋晓缘</h1>
-		<img height = "275px" src="./s5.jpg" >
-		<!-- <img src="ss.gif"> -->
-		<h2>北京大学数学系</br>IMO 2018 2017 金牌世界第一</br>2019高考满分状元</h2>
-		<p>She has AKed IMO <span class="counter">0</span> times.</p>
-		<p>她已经被您膜拜了 <span class="counter">0</span> 次。</p>
-		<button id="mobai" type="button" class="el-button el-button--primary is-plain is-round">点击膜拜</button>
-		<script>
-		var date1= new Date();
+    
+    <header>
+        <h1>宋晓缘</h1>
+        <img height = "275px" src="./s5.jpg" >
+        <!-- <img src="ss.gif"> -->
+        <h2>北京大学数学系</br>IMO 2018 2017 金牌世界第一</br>2019高考满分状元</h2>
+        <p>She has AKed IMO <span class="counter">0</span> times.</p>
+        <p>她已经被您膜拜了 <span class="counter">0</span> 次。</p>
+        <p>共有<span id = "busuanzi_value_site_uv"></span>人，前来膜拜<span id="busuanzi_value_site_pv"></span>次</p>
+        <button id="mobai" type="button" class="el-button el-button--primary is-plain is-round">点击膜拜</button>
+  <!--       <script>
+        var date1= new Date();
         var date2 = '2019/10/01 08:30:00';
         var date3 = date1.getTime() - new Date(date2).getTime();
-				var T = Math.floor(date3 / 10000000);
-				var s = "<p> 她共被膜拜" + T + "千次";
-				document.write(s);
-		</script>
-		<script>
-		
-			var counter = 0;
-			document.getElementById("mobai").onclick = function() {
-				++counter;
-				if(counter % 100 == 0) {
+                var T = Math.floor(date3 / 10000000);
+                var s = "<p> 她共被膜拜" + T + "千次";
+                document.write(s);
+        </script> -->
+        <script>
+        
+            var counter = 0;
+            document.getElementById("mobai").onclick = function() {
+                ++counter;
+                if(counter % 100 == 0) {
                     var s = "感谢您的" + counter + "个赞，sxy又变强了！";
                     alert(s);
-				}
-				document.getElementById("mobai").innerHTML="<img src='ss.gif'>";
-				for(let item of document.getElementsByClassName("counter")) {
-					item.innerText = counter;
-				}
-			}
-		</script>
+                }
+                document.getElementById("mobai").innerHTML="<img src='ss.gif'>";
+                for(let item of document.getElementsByClassName("counter")) {
+                    item.innerText = counter;
+                }
+            }
+        </script>
 <script>
 var _hmt = _hmt || [];
 (function() {
@@ -94,7 +100,7 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
 })();
 </script>
-	</header>
+    </header>
 
-	
+    
 </body>
